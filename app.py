@@ -40,7 +40,7 @@ def main():
             prediction = model_pipeline.predict([user_input])[0]
         
             # Display Result
-            if prediction == 1 == 'spam':
+            if prediction == 1 :
                 st.error(f"🚨 This is likely SPAM email!")
             else:
                 st.success(f"✅ This looks like a REAL email.")
